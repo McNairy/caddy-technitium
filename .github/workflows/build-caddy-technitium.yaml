@@ -8,6 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     environment: CADDY_TECHNITIUM
+    # Set the Node.js override for the entire job
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
