@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     environment: CADDY_TECHNITIUM
     
-    env:
-      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
-      NODE_OPTIONS: "--no-deprecation"
+    #env:
+      #FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      #NODE_OPTIONS: "--no-deprecation"
 
     steps:
       - name: Checkout
