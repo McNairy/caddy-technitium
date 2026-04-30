@@ -11,6 +11,7 @@ jobs:
     # Set the Node.js override for the entire job
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      NODE_OPTIONS: "--no-deprecation"
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
