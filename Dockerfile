@@ -3,7 +3,7 @@ FROM caddy:2-builder AS builder
 
 # Note the name change to technitium-dns at the end
 RUN xcaddy build \
-    --with github.com/spaaleks/caddy-technitium-dns
+    --with github.com/spaaleks/caddy-dns-technitium=./caddy-dns-technitium
 
 # Stage 2: Final image
 FROM caddy:2
